@@ -13,7 +13,10 @@ const typeDefs = `type Author {
         authors:[Author]
         author(id:String):Author
     }
-`;
+    type Mutation {
+        addAuthor(name:String!,age:Int!,books:[String]!):Author
+    }
+`; //'name:String!' in addAuthor represents its a required and mandatory field
 
 //generate schema
 const schema = makeExecutableSchema({typeDefs, resolvers});

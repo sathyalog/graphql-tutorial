@@ -28,3 +28,12 @@ querying author by age in resolvers.
 Installed mongoose module and used mongoose.connect to connect DB. Created author schema in models folder and declared schema with types.
 
 Note: Please install mongodb in your machine and make sure to run `mongod` and `mongo` run in advance before you run 'npm run build'
+
+## Mutations
+
+What are Mutations? 
+
+A GraphQL query performs the READ operation in a GraphQL API while a GraphQL mutation performs other operations such as CREATE, UPDATE and DELETE. This simply means that queries don't change data, a mutation does.
+
+#Add Author
+Add a record to mongodb using mutations. addAuthor in resolvers.js and schema.js helps to save data to mongodb using graphiql. Please refer screenshots.
