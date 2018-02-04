@@ -18,3 +18,7 @@ addMockFunctionsToSchema - is used to generate mock/fake data. Please refer the 
 // added resolvers to query from real data(JSON data defined in resolvers.js, not from DB yet)
 
 resolvers will go and fetch your data from data store or database using queries that are requested by client(here its graphiql left panel)
+
+// Selective Queries (complex)
+
+querying author by age in resolvers.

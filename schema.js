@@ -9,7 +9,8 @@ const typeDefs = `type Author {
     books: [String]
 }
     type Query {
-        author:[Author]
+        authors:[Author]
+        author(age:Int):Author
     }
 `;
 
