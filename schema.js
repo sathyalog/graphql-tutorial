@@ -16,6 +16,7 @@ const typeDefs = `type Author {
     type Mutation {
         addAuthor(name:String!,age:Int!,books:[String]!):Author
         deleteAuthor(id:String!):Author
+        updateAuthor(id:String!,name:String!):Author
     }
 `; //'name:String!' in addAuthor represents its a required and mandatory field
 

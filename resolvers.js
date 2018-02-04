@@ -22,8 +22,13 @@ const resolvers = {
          });
          return author.save();
         },
+        // delete an author using id
         deleteAuthor:(root,{id}) => {
             return authorModel.findOneAndRemove({id:id})
+        },
+        // we would like to update name of author using id
+        updateAuthor:(root,{id,name}) => {
+            return authorModel.findOneAndUpdate({id:id},{name:name});
         }
     }
 }

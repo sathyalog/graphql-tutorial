@@ -42,3 +42,7 @@ Add a record to mongodb using mutations. addAuthor in resolvers.js and schema.js
 #Delete Author
 
 Delete a record from mongodb by using a snippet in resolvers and schema.js. Please refer the code related to this commit and screenshots.
+
+#Update Author
+
+Update a record in mongodb using graphiql by adding a snippet in resolvers and schema files.
