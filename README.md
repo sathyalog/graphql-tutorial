@@ -46,3 +46,7 @@ Delete a record from mongodb by using a snippet in resolvers and schema.js. Plea
 #Update Author
 
 Update a record in mongodb using graphiql by adding a snippet in resolvers and schema files.
+
+#Queries Updated
+
+author by age, author by id and fetch all authors - queries are updated.

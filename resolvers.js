@@ -5,12 +5,14 @@ import authorModel from './models/authorSchema.js'
 //Note: query should be exactly with typedef defined in schema.js
 const resolvers = {
     Query: {
-        authors:()=>{
-            //return authors
+        authors:() => {
+            return authorModel.find({})
         },
-       author: (root,args) => {
-            // const age = args.age;
-            // return authors.find(author => author.age === age);
+       author: (root,{id}) => {
+            return authorModel.findOne({id:id})
+       },
+       authorsByAge:(root,{age}) => {
+            return authorModel.find({age:age})
        }
     },
     Mutation:{

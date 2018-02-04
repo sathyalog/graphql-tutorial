@@ -12,6 +12,7 @@ const typeDefs = `type Author {
     type Query {
         authors:[Author]
         author(id:String):Author
+        authorsByAge(age:Int):[Author]
     }
     type Mutation {
         addAuthor(name:String!,age:Int!,books:[String]!):Author
