@@ -36,4 +36,9 @@ What are Mutations?
 A GraphQL query performs the READ operation in a GraphQL API while a GraphQL mutation performs other operations such as CREATE, UPDATE and DELETE. This simply means that queries don't change data, a mutation does.
 
 #Add Author
+
 Add a record to mongodb using mutations. addAuthor in resolvers.js and schema.js helps to save data to mongodb using graphiql. Please refer screenshots.
+
+#Delete Author
+
+Delete a record from mongodb by using a snippet in resolvers and schema.js. Please refer the code related to this commit and screenshots.

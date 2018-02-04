@@ -21,6 +21,9 @@ const resolvers = {
              books:books
          });
          return author.save();
+        },
+        deleteAuthor:(root,{id}) => {
+            return authorModel.remove({id:id})
         }
     }
 }
